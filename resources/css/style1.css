@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+
+/* ---------- Basic Setup ---------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato',Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/* ---------- Resuable Components ---------- */
+.row{
+    max-width: 1140px;
+    margin:0 auto;
+}
+
+section{
+    padding: 50px 0;
+}
+
+
+
+/* ---------- Heading ---------- */
+.hero-text-box h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 240%;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    font-weight: 300;
+}
+
+.section-feature h2,.section-steps h2{
+    font-size: 130%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-feature h2::after,.section-steps h2::after{
+    content: " ";
+    display: block;
+    width: 100px;
+    height:3px;
+    background-color: #e67e22;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* ---------- Button Group ---------- */
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    text-decoration: none;
+    border:1px solid #e67e22;
+    padding:10px 30px;
+    border-radius: 20px;
+    transition: background-color 0.2s,color 0.2s,border 0.2s;
+
+}
+.btn-full:link,
+.btn-full:visited{
+    background-color: #e67e22;
+    color: #fff;
+    margin-right: 20px;
+
+}
+
+.btn-full:hover{
+    background-color: #cf6d1d;
+}
+
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    color: #e67e22;
+    border: 2px solid #cf6d1d;
+}
+
+.btn-ghost:hover{
+    background-color: #cf6d1d;
+    color: #fff;
+}
+
+/* ---------- Header Section ---------- */
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+   
+}
+.hero-text-box{
+    /* background-color: red; */
+    width: 1140px;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 50px;
+}
+
+.main-nav li{
+    list-style: none;
+    display: inline-block;
+
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 90%;
+    margin-left: 20px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+    padding:8px 0;
+
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #e67e22;
+}
+
+.section-feature .long-para{
+    width: 70%;
+    /* background-color: red; */
+    margin-left: 15%;
+    line-height: 145%;
+    margin-bottom: 30px;
+
+}
+
+.box{
+    padding: 1%;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+.box h3{
+    font-size: 105%;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.box .big-icon{
+    font-size: 230%;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+/* ---------- Meals Section ---------- */
+.section-meals{
+    padding: 0;
+}
+.meal-show{
+    width: 100%;
+    list-style: none;
+}
+.meal-show li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-show .meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+
+
+}
+
+.meal-photo img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s,scale 0.5s,opacity 0.5s;
+    opacity: 70%;
+}
+
+.meal-photo img:hover{
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+
+
+
+
